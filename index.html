@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Aesthetic — салон красоты</title>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-content">
+    <h1 class="header-title">Aesthetic</h1>
+    <p class="header-sub">пространство, созданное для ухода за собой</p>
+  </div>
+  <a href="#" class="fixed-button">Записаться</a>
+</header>
+
+<!-- Минималистичное фиксированное меню -->
+<div class="fixed-menu">
+  <div class="menu-logo">Aesthetic</div>
+  <div class="burger-icon">&#9776;</div>
+  <nav class="burger-nav">
+    <a href="#block-1">О салоне</a>
+    <a href="#block-2">О нас</a>
+    <a href="#block-3">Услуги</a>
+    <a href="#block-6">До/После</a>
+    <a href="#block-7">Контакты/запись</a>
+  </nav>
+</div>
+
+<!-- Блок 1: О салоне -->
+    <section class="about">
+  <div class="about-container" id="block-1">
+    <h2 class="about-title">О салоне</h2>
+    <p class="about-text">
+      Aesthetic — это пространство мягкого света и спокойного присутствия.<br><br>
+      Мы создали место, где забота о себе ощущается естественно.
+      Без спешки, без суеты — только внимание к деталям и состояние комфорта.
+    </p>
+  </div>
+
+  <div class="about-image"></div>
+</section>
+
+<!-- Блок 2: О нас -->
+<section class="salon-info-section" id="block-2">
+  <h2 class="salon-info-title">О нас</h2>
+  <p class="salon-info-subtitle">
+    Мы создаём атмосферу комфорта и заботы. Наши мастера заботятся не только о красоте, но и о вашем настроении.
+  </p>
+
+  <div class="salon-features-wrapper">
+    <div class="salon-feature-card">
+      <img src="images/master.jpg" alt="">
+      <h3>Профессиональные мастера</h3>
+      <p>Все специалисты с опытом от 3 лет и профильным обучением.</p>
+    </div>
+
+    <div class="salon-feature-card">
+      <img src="images/material.jpg" alt="">
+      <h3>Качественные материалы</h3>
+      <p>Работаем только на проверенных брендах премиум-класса.</p>
+    </div>
+
+    <div class="salon-feature-card">
+      <img src="images/atmo.jpg" alt="">
+      <h3>Комфортная атмосфера</h3>
+      <p>Чистота, уют и внимание к деталям — вы почувствуете заботу сразу.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Блок 3: Услуги + Цены -->
+<section id="block-3" class="services-block">
+  <div class="services-container">
+    <h2 class="services-title">Наши услуги</h2>
+    <div class="services-cards">
+      
+      <div class="service-card" id="service-1">
+        <img src="images/haircut.png" alt="Стрижка" class="service-img">
+        <h3 class="service-name">Стрижка</h3>
+        <p class="service-price">3000₸</p>
+      </div>
+
+      <div class="service-card" id="service-2">
+        <img src="images/coloring.png" alt="Окрашивание" class="service-img">
+        <h3 class="service-name">Окрашивание</h3>
+        <p class="service-price">5000₸</p>
+      </div>
+
+      <div class="service-card" id="service-3">
+        <img src="images/manicure.png" alt="Маникюр" class="service-img">
+        <h3 class="service-name">Маникюр</h3>
+        <p class="service-price">2500₸</p>
+      </div>
+
+      <div class="service-card" id="service-4">
+        <img src="images/massage.png" alt="Массаж" class="service-img">
+        <h3 class="service-name">Массаж</h3>
+        <p class="service-price">4000₸</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Блок 4: Фото До/После + отзыв -->
+<section id="block-6" class="block-6">
+  <div class="block-6-container">
+
+    <div class="block-6-slider">
+      <div class="block-6-slide active">
+        <img src="images/before1.png" alt="До">
+      </div>
+      <div class="block-6-slide">
+        <img src="images/after1.png" alt="После">
+      </div>
+
+      <button class="block-6-prev">&#10094;</button>
+      <button class="block-6-next">&#10095;</button>
+    </div>
+
+    <div class="block-6-testimonial">
+      <p class="block-6-text">
+        «Очень довольна результатом! Атмосфера была приятной, мастер профессионал своего дела.»
+      </p>
+      <p class="block-6-name">— Карина М.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Блок 5: Контакты + Форма -->
+<section id="block-7" class="block-7">
+  <div class="block-7-container">
+    
+    <h2 class="block-7-title">Запишитесь на услугу</h2>
+
+    <form class="block-7-form">
+      <label for="name">Ваше имя</label>
+      <input type="text" id="name" name="name" placeholder="Введите имя" required>
+
+      <label for="service">Выберите услугу</label>
+      <select id="service" name="service" required>
+        <option value="" disabled selected>Выберите услугу</option>
+        <option value="стрижка">Стрижка</option>
+        <option value="окрашивание">Окрашивание</option>
+        <option value="маникюр">Маникюр</option>
+        <option value="массаж">Массаж</option>
+      </select>
+    </form>
+
+    <p class="block-7-text">
+      Или свяжитесь с нами любым удобным способом:
+      <br>Телефон: +7 (777)123-45-67
+      <br>Email: example@mail.com
+    </p>
+
+  </div>
+</section>
+
+
+</body>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">Nikita1441Nb</div>
+
+    <div class="footer-contacts">
+      <p>Телефон: +7 (747)896-17-65</p>
+      <p>Email:nikbarabani@gmail.com</p>
+    </div>
+
+    <div class="footer-social">
+      <a href=https://t.me/Lexaengineer1441 target="_blank">Telegram</a>
+      <a href=https://wa.me/+77478961765 target="_blank">WhatsApp</a>
+    </div>
+
+    <div class="footer-copy">
+      &copy; 2025 Nikita1441Nb. Все права защищены.
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</html>
